@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Symbiosis Admission Form</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        /* Page styling (Internal CSS) */
+        body {
+            background-color: #f5f5dc;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            color: #4b2e1e;
+        }
+
+        .container {
+            width: 400px;
+            margin: auto;
+            margin-top: 50px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Button styled using INTERNAL CSS */
+        .submit-btn {
+            background-color: #4b2e1e;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #2f1c12;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Symbiosis Admission Form</h2>
+
+    <form>
+
+        <!-- Name -->
+        <label>Name:</label>
+        <input type="text" name="name" required>
+
+        <!-- Email -->
+        <label>Email ID:</label>
+        <input type="email" name="email" required>
+
+        <!-- Password -->
+        <label>Password:</label>
+        <input type="password" name="password" required>
+
+        <!-- Confirm Password -->
+        <label>Confirm Password:</label>
+        <input type="password" name="confirm_password" required>
+
+        <!-- Gender -->
+        <label>Gender:</label><br>
+        <input type="checkbox" value="Male"> Male
+        <input type="checkbox" value="Female"> Female
+        <input type="checkbox" value="Other"> Other
+        <br><br>
+
+        <!-- Course -->
+        <label>Course:</label>
+        <select required>
+            <option value="">Select Course</option>
+            <option>BTech</option>
+            <option>BBA</option>
+            <option>MBA</option>
+            <option>MTech</option>
+        </select>
+
+        <br><br>
+
+        <!-- Submit -->
+        <button type="submit" class="submit-btn">Register</button>
+
+    </form>
+</div>
+
+</body>
+</html>
