@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <form id="feedbackForm" onsubmit="return validateForm()">
+
+        <h2>Student Feedback</h2>
+
+        <!-- Name -->
+        <div class="input-group">
+            <label>Student Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+
+        <!-- Email -->
+        <div class="input-group">
+            <label>Email</label>
+            <input type="text" id="email" placeholder="Enter your email">
+        </div>
+
+        <!-- Mobile -->
+        <div class="input-group">
+            <label>Mobile Number</label>
+            <input type="text" id="mobile" placeholder="Enter mobile number">
+        </div>
+
+        <!-- Department -->
+        <div class="input-group">
+            <label>Department</label>
+            <select id="department">
+                <option value="">Select Department</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="IT">IT</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Electronics">Electronics</option>
+            </select>
+        </div>
+
+        <!-- Gender (FIXED FOR SELENIUM) -->
+        <div class="input-group">
+            <label>Gender</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="gender" value="male" id="male"> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female" id="female"> Female
+                </label>
+            </div>
+        </div>
+
+        <!-- Feedback -->
+        <div class="input-group">
+            <label>Feedback</label>
+            <textarea id="feedback" placeholder="Enter at least 10 words"></textarea>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="reset" class="reset-btn">Reset</button>
+        </div>
+
+        <!-- Error message -->
+        <p id="error"></p>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

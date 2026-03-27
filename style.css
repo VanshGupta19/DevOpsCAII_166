@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card container */
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Form styling */
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input groups */
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+/* Focus effect */
+input:focus, select:focus, textarea:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102,126,234,0.5);
+}
+
+/* Radio buttons */
+.radio-group {
+    display: flex;
+    gap: 15px;
+}
+
+/* Buttons */
+.buttons {
+    text-align: center;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+/* Submit button */
+.submit-btn {
+    background: #667eea;
+    color: white;
+}
+
+.submit-btn:hover {
+    background: #5a67d8;
+}
+
+/* Reset button */
+.reset-btn {
+    background: #e53e3e;
+    color: white;
+}
+
+.reset-btn:hover {
+    background: #c53030;
+}
+
+/* Error text */
+#error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
